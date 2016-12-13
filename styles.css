@@ -1,0 +1,83 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto";
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-image: url('img/background-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.links {
+  padding: 20px;
+  position: absolute;
+  top: 40%;
+  left: calc(50% + 100px);
+  text-align: center;
+}
+
+.fomisto {
+  margin: 40px 0;
+  text-align: center;
+}
+.fomisto a {
+  display: block;
+  margin-bottom: 5px;
+  padding: 12px 32px;
+  background-color: #D84315;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
+}
+.fomisto a:hover {
+  background-color: #EB5E33;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+.fomisto span {
+  color: #FFF;
+  opacity: 0.7;
+}
+.fomisto span:nth-of-type(1) {
+  color: #FFF;
+}
+.fomisto span:nth-of-type(2) {
+  color: #FFF;
+  font-family: "Pacifico", cursive;
+}
+.facebook-icon,
+.twitter-icon,
+.instagram-icon {
+  display: inline-block;
+  margin: 0 12px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.facebook-icon:hover,
+.twitter-icon:hover,
+.instagram-icon:hover {
+  filter: brightness(125%);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+.facebook-icon {
+  background-image: url("/img/facebook.png");
+}
+.twitter-icon {
+  background-image: url("/img/twitter.png");
+}
+.instagram-icon {
+  background-image: url("/img/instagram.png");
+}
