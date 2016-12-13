@@ -1,0 +1,54 @@
+body {
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0;
+  background-color: #000;
+  font-family: "Roboto";
+}
+
+.container {
+  overflow: visible;
+  position: relative;
+  -ms-flex: 0 1 600px;
+      flex: 0 1 600px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 400px;
+}
+
+.background {
+  width: 50%;
+  height: 100%;
+  background-image: url('img/background-desktop.jpg');
+  background-position: 46.5% 65%;
+  background-repeat: no-repeat;
+  background-size: 1800px 1012.5px;
+}
+.background:before {
+  content: "";
+  position: absolute;
+  top: -398px;
+  left: -698px;
+  width: 10000px;
+  height: 10000px;
+  background-image: url('img/background-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: 1800px 1012.5px;
+  z-index: -1;
+}
+
+.links {
+  box-sizing: border-box;
+  padding: 30px;
+  width: 50%;
+  text-align: center;
+}

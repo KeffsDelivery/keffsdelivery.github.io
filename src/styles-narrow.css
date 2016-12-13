@@ -1,0 +1,39 @@
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+  background-color: #000;
+  font-family: "Roboto";
+}
+
+.container {
+  overflow: visible;
+  position: relative;
+  flex: 0 1 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+.background {
+  flex-basis: 100%;
+  padding-top: 100%;
+  width: 50%;
+  height: 0;
+  background-image: url('img/background-mobile.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.links {
+  flex: 0 1 100%;
+  box-sizing: border-box;
+  margin-top: -50px;
+  padding: 0 50px;
+  width: 50%;
+  text-align: center;
+}
