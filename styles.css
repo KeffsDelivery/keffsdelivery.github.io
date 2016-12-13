@@ -1,32 +1,58 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
   height: 100%;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #000;
   font-family: "Roboto";
 }
 
 .container {
-  width: 100%;
+  overflow: visible;
+  position: relative;
+  flex: 0 1 600px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+.background {
+  width: 50%;
   height: 100%;
-  background-color: #000;
   background-image: url('img/background-desktop.jpg');
-  background-position: center;
+  background-position: 46.5% 65%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1800px 1012.5px;
+}
+.background:before {
+  content: "";
+  position: absolute;
+  top: -398px;
+  left: -698px;
+  width: 10000px;
+  height: 10000px;
+  background-image: url('img/background-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: 1800px 1012.5px;
+  z-index: -1;
 }
 
 .links {
-  padding: 20px;
-  position: absolute;
-  top: 40%;
-  left: calc(50% + 100px);
+  box-sizing: border-box;
+  padding: 30px;
+  width: 50%;
   text-align: center;
 }
 
 .fomisto {
-  margin: 40px 0;
+  margin: 40px 0 0;
   text-align: center;
 }
 .fomisto a {
@@ -40,11 +66,16 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
-  /*text-transform: uppercase;*/
 }
 .fomisto a:hover {
+  transform: translate(0, -1px);
   background-color: #EB5E33;
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+.fomisto a:active {
+  transform: translate(0, 2px);
+  background-color: #BE3B13;
+  box-shadow: inset 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 .fomisto span {
   color: #FFF;
@@ -69,8 +100,16 @@ body {
 .facebook-icon:hover,
 .twitter-icon:hover,
 .instagram-icon:hover {
+  transform: translate(0, -1px);
   filter: brightness(125%);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+.facebook-icon:active,
+.twitter-icon:active,
+.instagram-icon:active {
+  transform: translate(0, 2px);
+  filter: brightness(90%);
+  box-shadow: inset 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 .facebook-icon {
   background-image: url("/img/facebook.png");
