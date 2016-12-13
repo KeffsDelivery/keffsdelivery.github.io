@@ -1,17 +1,14 @@
 body {
   overflow: hidden;
-  -ms-flex-align: start;
-      align-items: flex-start;
+  align-items: flex-start;
 }
 
 .container {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 .background {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
   padding-top: 100%;
   height: 0;
   background-image: url('img/background-mobile.jpg');
@@ -26,6 +23,5 @@ body {
 .links {
   margin-top: -50px;
   padding: 0 50px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }

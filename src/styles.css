@@ -5,12 +5,9 @@ body {
 
 body {
   overflow: hidden;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   background-color: #000;
   font-family: "Roboto";
@@ -19,14 +16,10 @@ body {
 .container {
   overflow: visible;
   position: relative;
-  -ms-flex: 0 1 600px;
-      flex: 0 1 600px;
-  display: -ms-flexbox;
+  flex: 0 1 600px;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
   height: 400px;
 }
 
@@ -75,14 +68,12 @@ body {
   text-decoration: none;
 }
 .fomisto a:hover {
-  -ms-transform: translate(0, -1px);
-      transform: translate(0, -1px);
+  transform: translate(0, -1px);
   background-color: #EB5E33;
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 }
 .fomisto a:active {
-  -ms-transform: translate(0, 2px);
-      transform: translate(0, 2px);
+  transform: translate(0, 2px);
   background-color: #BE3B13;
   box-shadow: inset 0 8px 32px rgba(0, 0, 0, 0.2);
 }
@@ -109,19 +100,15 @@ body {
 .facebook-icon:hover,
 .twitter-icon:hover,
 .instagram-icon:hover {
-  -ms-transform: translate(0, -1px);
-      transform: translate(0, -1px);
-  -webkit-filter: brightness(125%);
-          filter: brightness(125%);
+  transform: translate(0, -1px);
+  filter: brightness(125%);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 }
 .facebook-icon:active,
 .twitter-icon:active,
 .instagram-icon:active {
-  -ms-transform: translate(0, 2px);
-      transform: translate(0, 2px);
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
+  transform: translate(0, 2px);
+  filter: brightness(90%);
   box-shadow: inset 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 .facebook-icon {
